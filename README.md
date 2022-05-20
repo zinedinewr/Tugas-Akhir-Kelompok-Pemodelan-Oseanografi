@@ -22,4 +22,7 @@ penjelasan singkat
 
 
 # **Kelompok 9 Pemodelan Oseanografi**
-penjelasan singkat
+1.
+2.
+3.
+4. Zinedine Wira Mulyawan/26050120130046/Oseanografi A
