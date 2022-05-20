@@ -23,6 +23,12 @@ penjelasan, coding, dan gambar
 
 
 
+# Pengunduhan *Script* Pemodelan Oseanografi
+1. Klik *releases* pada repositori ini.
+2. Klik *script* yang ingin diunduh.
+3. *Script* akan terunduh secara otomatis.
+
+
 # **Kelompok 9 Pemodelan Oseanografi**
 1.
 2.
