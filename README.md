@@ -3,13 +3,14 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 
 
 
-
 # **Adveksi-Difusi 1D**
 penjelasan, coding, dan gambar
 
 
+
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
+
 
 
 # **Hidrodinamika 1D**
@@ -19,6 +20,7 @@ penjelasan, coding, dan gambar
 
 # **Hidrodinamika 2D**
 penjelasan, coding, dan gambar
+
 
 
 # **Kelompok 9 Pemodelan Oseanografi**
