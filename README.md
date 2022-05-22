@@ -1,4 +1,4 @@
-# Tugas-Akhir-Kelompok-Pemodelan-Oseanografi
+# Tugas-Akhir-Kelompok-Pemodelan-Oseanografi 💻
 Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi tahun 2022. Bahasa pemograman yang digunakan dalam repositori ini adalah bahasa pemograman *Python* yang dapat dikerjakan pada *text editor Google Colaboratory* dan *Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*. Seluruh _script_ yang dibuat merupakan hasil kerja kelompok 9 Oseanografi 2020.
 
 Semoga Bermanfaat <3
