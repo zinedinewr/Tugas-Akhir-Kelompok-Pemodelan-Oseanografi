@@ -33,7 +33,7 @@ Kelemahan model hidrodinamika:
 # **Hidrodinamika 2D**
 penjelasan, coding, dan gambar
 
-Persamaan ini dapat digunakan dalam pemodelan gelombang karena angin, pemodelan sampah plastik di laut, pemodelan coastal dynamics dan sedimentasi pantai
+Pemodelan hidrodinamika 2D dapat digunakan untuk meninjau arah yang lain, misalnya pada sumbu x dan y atau pada sumbu x dan z. Persamaan ini dapat digunakan dalam pemodelan gelombang akibat angin, pemodelan sampah plastik di laut, pemodelan *coastal dynamics* dan sedimentasi pantai serta mengukur tingkat konsentrasi kimia berdasarkan kedalaman dan panjangnya. Pada pemodelan hidrodinamika 2D dapat ditemukan anomali yang menyebabkan hasil tidak sepenuhnya sesuai dengan kondisi aslinya.
 
 
 
