@@ -6,8 +6,7 @@ Semoga Bermanfaat <3
 # **Adveksi-Difusi 1D**
 penjelasan, coding, dan gambar
 
-Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya.
-Difusi adalah sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah
+Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya sedangkan difusi dapat didefinisikan sebagai sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah. Persamaan gelombang linier orde satu termasuk ke dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi fluida dengan arah tertentu. Persamaan tersebut dapat didiskritisasi menggunakan secara eksplisit maupun implisit. Tipe eksplisit memiliki keunggulan berupa stabilitas hitungan dan perhitungan yang lebih mudah dibandingkan tipe implisit. Namun, tipe eksplisit memerlukan proses yang lama.
 
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
