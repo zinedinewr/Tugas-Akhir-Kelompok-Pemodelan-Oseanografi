@@ -5,7 +5,8 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 
 # **Adveksi-Difusi 1D**
 penjelasan, coding, dan gambar
-
+Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya.
+Difusi adalah sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah
 
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
