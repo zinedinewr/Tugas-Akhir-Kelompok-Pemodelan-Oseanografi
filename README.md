@@ -10,7 +10,13 @@ Difusi adalah sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke
 
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
+model 2D untuk mekanisme transpor difusi dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang
 
+Pada model adveksi, persamaan beda hingga menggunakan pendekatan beda maju untuk turunan waktu, sedangkan turunan ruang dilakukan dengan melihat arah kecepatan u. 
+- jika u > 0 maka turunan ruang menggunakan pendekatan beda mundur
+- jika u < 0 maka turunan ruang menggunakan pendekatan beda maju
+
+Pada model difusi, digunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang
 
 
 # **Hidrodinamika 1D**
