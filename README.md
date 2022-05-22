@@ -14,11 +14,10 @@ Adveksi merupakan proses transportasi berupa aliran rata-rata atau arus, seperti
 # **Hidrodinamika 1D**
 penjelasan, coding, dan gambar
 
-Model hidrodinamika dibangun dari adanya proses-proses yang mempengaruhi pergerakan massa air. Persamaan ini dibangun berdasarkan hukum konservasi massa, kontinuitas dan momentum
-Kelemahan model hidrodinamika:
-1. Banyak data 
-2. Rawan eror ketika terdapat perhitungan aliran kritis
-3. Simulasi lama 
+Model hidrodinamika adalah model yang didasarkan pada deskripsi proses-proses yang memengaruhi sirkulasi dan pencampuran massa air dengan hukum pembangun yang terdiri dari hukum konservasi massa, kontinuitas, dan momentum serta diasumsikan dengan adanya skenario. Beberapa kelemahan model hidrodinamika, yaitu:
+1. Banyak data,
+2. Rawan *error* ketika terdapat perhitungan aliran kritis, dan
+3. Simulasi lama.
 
 # **Hidrodinamika 2D**
 penjelasan, coding, dan gambar
