@@ -7,7 +7,6 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 penjelasan, coding, dan gambar
 
 
-
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
 
@@ -15,11 +14,16 @@ penjelasan, coding, dan gambar
 
 # **Hidrodinamika 1D**
 penjelasan, coding, dan gambar
-
+Model hidrodinamika dibangun dari adanya proses-proses yang mempengaruhi pergerakan massa air. Persamaan ini dibangun berdasarkan hukum konservasi massa, kontinuitas dan momentum
+Kelemahan model hidrodinamika:
+1. Banyak data 
+2. Rawan eror ketika terdapat perhitungan aliran kritis
+3. Simulasi lama 
 
 
 # **Hidrodinamika 2D**
 penjelasan, coding, dan gambar
+Persamaan ini dapat digunakan dalam pemodelan gelombang karena angin, pemodelan sampah plastik di laut, pemodelan coastal dynamics dan sedimentasi pantai
 
 
 
