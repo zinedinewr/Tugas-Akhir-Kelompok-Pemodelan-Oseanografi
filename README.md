@@ -40,9 +40,16 @@ Persamaan ini dapat digunakan dalam pemodelan gelombang karena angin, pemodelan 
 
 # Pengunduhan *Script* Pemodelan Oseanografi
 1. Klik *releases* pada repositori ini.
+
+![ta1](https://user-images.githubusercontent.com/105653499/169699805-6ddcb857-d646-44e2-bfe4-f34d647ebcab.png)
+
 2. Klik *script* yang ingin diunduh.
+
+![ta2](https://user-images.githubusercontent.com/105653499/169699924-5d38bd87-71a9-40d1-bda2-b67069c1f84c.png)
+
 3. *Script* akan terunduh secara otomatis.
 
+![ta3](https://user-images.githubusercontent.com/105653499/169699931-7fd825c4-353f-4f59-9772-c32e135f2ac3.png)
 
 # 👨‍💻 **Kelompok 9 Pemodelan Oseanografi** 👩‍💻
 1.
