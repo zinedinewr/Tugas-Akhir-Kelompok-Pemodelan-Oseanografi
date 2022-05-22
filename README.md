@@ -1,12 +1,12 @@
 # Tugas Akhir Kelompok Pemodelan Oseanografi 💻
 Repositori ini dibuat untuk memenuhi tugas akhir mata kuliah Praktikum Pemodelan Oseanografi tahun 2022. Bahasa pemograman yang digunakan dalam repositori ini adalah bahasa pemograman *Python* yang dapat dikerjakan pada *text editor Google Colaboratory* dan *Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*. Seluruh _script_ yang dibuat merupakan hasil kerja kelompok 9 Oseanografi 2020.
 
-Semoga Bermanfaat <3
+Semoga bermanfaat <3
 
 # **Adveksi-Difusi 1D**
 penjelasan, coding, dan gambar
 
-Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya sedangkan difusi dapat didefinisikan sebagai sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah. Persamaan gelombang linier orde satu termasuk ke dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi fluida dengan arah tertentu. Persamaan tersebut dapat didiskritisasi menggunakan secara eksplisit maupun implisit. Tipe eksplisit memiliki keunggulan berupa stabilitas hitungan dan perhitungan yang lebih mudah dibandingkan tipe implisit. Namun, tipe eksplisit memerlukan proses yang lama.
+Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya sedangkan difusi dapat didefinisikan sebagai sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah. Persamaan gelombang linier orde satu termasuk ke dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi fluida dengan arah tertentu. Persamaan tersebut dapat didiskritisasi menggunakan secara eksplisit maupun implisit. Tipe eksplisit memiliki keunggulan berupa stabilitas hitungan dan perhitungan yang lebih mudah dibandingkan tipe implisit tetapi tipe eksplisit memerlukan proses yang lama.
 
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
