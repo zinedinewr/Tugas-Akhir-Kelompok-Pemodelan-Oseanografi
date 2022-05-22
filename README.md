@@ -44,7 +44,7 @@ Persamaan ini dapat digunakan dalam pemodelan gelombang karena angin, pemodelan 
 3. *Script* akan terunduh secara otomatis.
 
 
-# **Kelompok 9 Pemodelan Oseanografi**
+# 👨‍💻 **Kelompok 9 Pemodelan Oseanografi** 👩‍💻
 1.
 2.
 3. Kirana Adhiningtyas/26050120130077/Oseanografi A
