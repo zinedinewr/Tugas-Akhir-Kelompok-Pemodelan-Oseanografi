@@ -5,11 +5,13 @@ Repositori ini merupakan tugas akhir mata kuliah Praktikum Pemodelan Oseanografi
 
 # **Adveksi-Difusi 1D**
 penjelasan, coding, dan gambar
+
 Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya.
 Difusi adalah sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah
 
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
+
 model 2D untuk mekanisme transpor difusi dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang
 
 Pada model adveksi, persamaan beda hingga menggunakan pendekatan beda maju untuk turunan waktu, sedangkan turunan ruang dilakukan dengan melihat arah kecepatan u. 
@@ -21,6 +23,7 @@ Pada model difusi, digunakan pendekatan beda maju untuk turunan waktu dan beda p
 
 # **Hidrodinamika 1D**
 penjelasan, coding, dan gambar
+
 Model hidrodinamika dibangun dari adanya proses-proses yang mempengaruhi pergerakan massa air. Persamaan ini dibangun berdasarkan hukum konservasi massa, kontinuitas dan momentum
 Kelemahan model hidrodinamika:
 1. Banyak data 
@@ -30,6 +33,7 @@ Kelemahan model hidrodinamika:
 
 # **Hidrodinamika 2D**
 penjelasan, coding, dan gambar
+
 Persamaan ini dapat digunakan dalam pemodelan gelombang karena angin, pemodelan sampah plastik di laut, pemodelan coastal dynamics dan sedimentasi pantai
 
 
