@@ -1,7 +1,5 @@
 # Tugas Akhir Kelompok Pemodelan Oseanografi 💻
-Repositori ini dibuat untuk memenuhi tugas akhir mata kuliah Praktikum Pemodelan Oseanografi tahun 2022. Bahasa pemograman yang digunakan dalam repositori ini adalah bahasa pemograman *Python* yang dapat dikerjakan pada *text editor Google Colaboratory* dan *Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*. Seluruh _script_ yang dibuat merupakan hasil kerja kelompok 9 Oseanografi 2020.
-
-Semoga bermanfaat <3
+Repositori ini dibuat untuk memenuhi tugas akhir mata kuliah Praktikum Pemodelan Oseanografi tahun 2022. Bahasa pemograman yang digunakan dalam repositori ini adalah bahasa pemograman *Python* yang dapat dikerjakan pada *text editor Google Colaboratory* dan *Jupyter Notebook*. Modul yang digunakan pada repositori ini adalah *matplotlib*, *numpy*, dan *sys*. Seluruh _script_ yang dibuat merupakan hasil kerja kelompok 9 Oseanografi 2020. Semoga bermanfaat <3
 
 # **Adveksi-Difusi 1D**
 penjelasan, coding, dan gambar
@@ -11,14 +9,7 @@ Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke t
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
 
-model 2D untuk mekanisme transpor difusi dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang
-
-Pada model adveksi, persamaan beda hingga menggunakan pendekatan beda maju untuk turunan waktu, sedangkan turunan ruang dilakukan dengan melihat arah kecepatan u. 
-- jika u > 0 maka turunan ruang menggunakan pendekatan beda mundur
-- jika u < 0 maka turunan ruang menggunakan pendekatan beda maju
-
-Pada model difusi, digunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang
-
+Adveksi merupakan proses transportasi berupa aliran rata-rata atau arus, seperti sungai atau gerakan pasang surut, yang digerakkan oleh gaya gravitasi atau tekanan dan berupa gerak horizontal sedangkan difusi merupakan proses transportasi materi dari suatu sistem ke bagian yang lain sebagai hasil pergerakan molekul acak, di mana setiap partikel difusi bergerak secara acak di bidang difusi. Adveksi-difusi merupakan proses transportasi materi dari satu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata-rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan berupa gerak horizontal. Persamaan adveksi-difusi merupakan persamaan matematis yang didesain untuk mempelajari fenomena transpor polutan. Persamaan transpor merupakan salah satu persamaan diferensial yang merepresentasikan sirkulasi aliran air di estuari dengan variabel C sebagai fungsi ruang dan waktu. Pergerakan polutan dipengaruhi oleh kecepatan aliran, koefisien difusi, arah arus, lama pergerakan polutan, dll. Pada mekanisme transpor difusi 2D dapat menggunakan pendekatan beda maju untuk turunan waktu dan beda pusat untuk turunan ruang sedangkan model adveksi 2D menggunakan pendekatan beda maju untuk turunan waktu dan turunan ruang dilakukan dengan melihat arah kecepatan u, di mana ketika u > 0 maka turunan ruang menggunakan pendekatan beda mundur sedangkan ketika u < 0 maka turunan ruang menggunakan pendekatan beda maju.
 
 # **Hidrodinamika 1D**
 penjelasan, coding, dan gambar
@@ -29,13 +20,10 @@ Kelemahan model hidrodinamika:
 2. Rawan eror ketika terdapat perhitungan aliran kritis
 3. Simulasi lama 
 
-
 # **Hidrodinamika 2D**
 penjelasan, coding, dan gambar
 
 Pemodelan hidrodinamika 2D dapat digunakan untuk meninjau arah yang lain, misalnya pada sumbu x dan y atau pada sumbu x dan z. Persamaan ini dapat digunakan dalam pemodelan gelombang akibat angin, pemodelan sampah plastik di laut, pemodelan *coastal dynamics* dan sedimentasi pantai serta mengukur tingkat konsentrasi kimia berdasarkan kedalaman dan panjangnya. Pada pemodelan hidrodinamika 2D dapat ditemukan anomali yang menyebabkan hasil tidak sepenuhnya sesuai dengan kondisi aslinya.
-
-
 
 # Pengunduhan *Script* Pemodelan Oseanografi
 1. Klik *releases* pada repositori ini.
