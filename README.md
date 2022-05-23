@@ -53,3 +53,4 @@ Pemodelan hidrodinamika 2D dapat digunakan untuk meninjau arah yang lain, misaln
 2. Gabriela Vany Rosanta Sinaga/ 26050120120024/ Oseanografi A
 3. Kirana Adhiningtyas/26050120130077/Oseanografi A
 4. Zinedine Wira Mulyawan/26050120130046/Oseanografi A
+5. Marto Naldo Sitanggang/26050120140038/Oseanografi B
