@@ -8,6 +8,23 @@ penjelasan, coding, dan gambar
 
 Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya sedangkan difusi dapat didefinisikan sebagai sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah. Persamaan gelombang linier orde satu termasuk ke dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi fluida dengan arah tertentu. Persamaan tersebut dapat didiskritisasi menggunakan secara eksplisit maupun implisit. Tipe eksplisit memiliki keunggulan berupa stabilitas hitungan dan perhitungan yang lebih mudah dibandingkan tipe implisit tetapi tipe eksplisit memerlukan proses yang lama.
 
+#**Difusi**
+Difusi adalah peristiwa dimana terjadi transfer materi melalui materi lain. Transfer materi ini berlangsung karena atom atau partikel selalu bergerak oleh agitasi thermal. Difusi merupakan proses irreversible (tidak dapat diubah). Pada fase gas dan cair, peristiwa difusi mudah terjadi, sedangkan pada fase padat difusi juga terjadi walaupun memerlukan waktu yang lebih lama. 
+Fenomena difusi massa digambarkan sebagai berikut : 
+![image](https://user-images.githubusercontent.com/106045814/169815374-47edb95b-3055-46c9-a414-7fdf7fa48c5c.png)
+Pada gambar (1) di atas merupakan proses difusi. Saat baru terjadi pelepasan massa, kerapatan massa masih berkonsentrasi disekitar sumber dan belum menyebar. Hal ini terlihat dari daerah hitam yang terkonsentrasi di sekitar sumber dan terang di titik-titik yang jauh dari sumber (Gambar 1a). Berikutnya, pada gambar 1b, daerah hitam di sekitar sumber mulai membesar, menunjukan massa telah mulai menyebar. Penyebaran massa ini terus terjadi dan semakin tampak jelas pada gambar 1c yaitu dengan membesarnya daerah hitam dan juga memudarnya warna hitam di sekitar sumber. Pada gambar 1d, di sekitar sumber tidak hitam lagi, yang menunjukan penurunan kerapatan massa yang cukup berarti di titik sumber. Penurunan kerapatan massa di sekitar sumber ini semata-mata karena massa telah menyebar dan secara total tidak terjadi pengurangan ataupunpenambahan massa
+
+Persamaan Adveksi- Difusi 1D
+1. Difusi 
+![image](https://user-images.githubusercontent.com/106045814/169814201-222a9150-dcd1-49b6-9852-10ee3d0e0dff.png)
+2. Deskritisasi 1D proses Difusi 
+![image](https://user-images.githubusercontent.com/106045814/169814299-43b87601-02e5-4fae-b934-70f52fc9461d.png)
+3. Persamaan Adveksi Difusi 
+![image](https://user-images.githubusercontent.com/106045814/169814451-0ff1ead3-53cd-4732-a937-8f9a8f79f835.png)
+dengan kriteria : 
+![image](https://user-images.githubusercontent.com/106045814/169814549-2306dd0f-2ae9-44ff-97a2-c5685223c0bb.png)
+
+
 # **Adveksi-Difusi 2D**
 penjelasan, coding, dan gambar
 
