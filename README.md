@@ -321,7 +321,6 @@ plt.show()
 Grafik 1 dan 2 menunjukkan pola grafik yang tidak konsisten apabila ditinjau dari besar elevasi. Pada grafik tersebut menunjukan kedalaman berada pada perairan dangkal atau pesisir dengan kondisi batas yang tidak terpenuhi. Grafik 3 dan 4 menunjukkan pola grafik yang konsisten dengan grid elevasi yang semakin besar sehingga nilai kecepatannya semakin meningkat. Pada grafik tersebut terlihat lebih konsisten sehingga dapat diartikan bahwa jenis perairan yang menjadi objek analisis merupakan perairan dalam. Berdasarkan pola pada grafik dan nilai yang didapat antara besar elevasi dengan kecepatan terlihat sinkron sehingga untuk grafik 3 dan 4 tidak diperlukan analisis dengan model 2D atau 3D sedangkan grafik 1 dan 2 memerlukan analisis lanjutan menggunakan pemodelan 2D atau 3D.
 
 # **Hidrodinamika 2D**
-penjelasan, coding, dan gambar
 
 Pemodelan hidrodinamika 2D dapat digunakan untuk meninjau arah yang lain, misalnya pada sumbu x dan y atau pada sumbu x dan z. Persamaan ini dapat digunakan dalam pemodelan gelombang akibat angin, pemodelan sampah plastik di laut, pemodelan *coastal dynamics* dan sedimentasi pantai serta mengukur tingkat konsentrasi kimia berdasarkan kedalaman dan panjangnya. Pada pemodelan hidrodinamika 2D dapat ditemukan anomali yang menyebabkan hasil tidak sepenuhnya sesuai dengan kondisi aslinya.
 
