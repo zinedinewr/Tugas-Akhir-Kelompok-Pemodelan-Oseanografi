@@ -41,30 +41,30 @@ import numpy as np
 import sys
 #%%
 def percentage(part, whole):
-        percentage = 100 * float(part)/float(whole)
-        return str(round(percentage,2)) + "%"
+    percentage = 100 * float(part)/float(whole)
+    return str(round(percentage, 2)) + "X"
 #%%
 ```
 
 **Input Parameter Awal**
 ```
-C = 1.77 #Kecepatan Aliran
-ad = 1.77 #Koefisien Difusi
-theta = 0 + 77 #Arah Arus
+C = 0.64   #nilai kecepatan aliran
+ad = 1.64  #koefisiendifusi
+theta = 64, 124, 199, 379 #pilihsalahsatu
 ```
 
 **Input Parameter Lanjutan**
 ```
 q = 0.95 #Kriteria Kestabilan
-x = 500 #Jumlah Grid Horizontal x
-y = 500 #Jumlah Grid Vertikal y
-dx = 5
-dy = 5
-Tend = 100 + 7 #Lama Simulasi
+x = 300 #Jumlah Grid Horizontal x
+y = 300 #Jumlah Grid Vertikal y
+dx = 3
+dy = 3
+Tend = 100 + 6 #lamasimulasi
 dt = 0.5
-px = 250 #Polutan pada Grid x
-py = 230 + 7 #Polutan pada Grid y
-Ic = 1000 + 77 #Jumlah Polutan
+px = 150 #Polutan pada Grid x
+py = 130 + 6 #Polutan pada Grid y
+Ic = 500 + 46 #Jumlah Polutan
 ```
 
 **Perhitungan U dan V**
@@ -93,7 +93,7 @@ lx = u*dt/dx
 ly = v*dt/dy
 ax = ad*dt/dx**2
 ay = ad*dt/dy**2
-cfl = (2*ax + 2*ay + abs(lx) + abs(ly))
+cfl = (2*ax + 2*ay + abs(lx) + abs(ly)) #syaratkestabilanCFL
 ```
 
 **Perhitungan CFL**
@@ -118,7 +118,13 @@ F[0,py1,px1] = Ic #Kondisi Awal
 for n in range (0,Nt):
     for i in range (1,Ny+1):
         for j in range (1,Nx+1):
-            F[n+1,i,j]=((F[n,i,j]*(1-abs(lx)-abs(ly))) + (0.5*(F[n,i-1,j]*(ly+abs(ly)))) + (0.5*(F[n,i+1,j]*(abs(ly)-ly))))
+            F[n+1,i,j]=((F[n,i,j]*(1-abs(lx)-abs(ly))) + \
+                (0.5*(F[n,i-1,j]*(ly+abs(ly)))) + \
+                (0.5*(F[n,i+1,j]*(abs(ly)-ly))) + \
+                (0.5*(F[n,i,j-1]*(lx+abs(lx)))) + \
+                (0.5*(F[n,i,j+1]*(abs(lx)-lx))) + \
+                (ay*(F[n,i+1,j]-2*(F[n,i,j])+F[n,i-1,j])) +\
+                (ax*(F[n,i,j+1]-2*(F[n,i,j])+F[n,i,j-1])))
     #Kondisi Batas (Dirichlet Condition)
     F[n+1,0,:] = 0 #BC Bawah
     F[n+1,:,0] = 0 #BC Kiri
@@ -128,45 +134,50 @@ for n in range (0,Nt):
 
 **Pembuatan Grafik**
 ```
-    #Output Gambar
+    #output gambar
     plt.clf()
-    plt.pcolor(x_mesh, y_mesh, F[n+1,:,:],cmap = 'jet',shading = 'auto', edgecolors = 'k')
-    cbar = plt.colorbar(orientation = 'vertical',shrink = 0.95, extend ='both')
-    cbar.set_label(label='concentration', size = 8)
-    #plt.clim(0,100)
-    plt.title('Kirana Adhiningtyas_26050120130077 - Skenario 1 \n t='+str(round(dt*(n+1),3))+', Kondisi Awal='+str(Ic),fontsize=10)
+    plt.pcolor(x_mesh, y_mesh, F[n+1, :, :], cmap = 'jet',shading='auto',edgecolor='k')
+    cbar=plt.colorbar(orientation='vertical',shrink=0.95,extend='both')
+    plt.clf()
+    plt.pcolor(x_mesh,y_mesh,F[n+1,:,:],cmap='jet',shading='auto',edgecolor='k')
+    cbar = plt.colorbar(orientation='vertical',shrink=0.95,extend='both')
+    cbar.set_label(label='Concentration',size = 8)
+    #plt clim (0,100)
+    plt.title('Zinedine Wira Mulyawan_26050120130046 \n t='+str(round(dt*(n+1),3))+', initial condition='+str(Ic),fontsize=10)
     plt.xlabel('x_grid',fontsize=9)
     plt.ylabel('y_grid',fontsize=9)
-    plt.axis([0,x,0,y])
-    #plt.pause(0.01)
-    plt.savefig(str(n+1)+'.png', dpi = 300)
+    plt.axis([0, x, 0, y])
+    #pltpause(0.01)
+    plt.savefig(str(n+1)+'.jpg', dpi = 300)
+    plt.pause(0.01)
     plt.close()
-    print('running timestep ke :' + str(n+1) + ' dari :' + str(Nt) + ' ('+ percentage(n+1,Nt)+')')
+    print('running timestep ke:' +str(n+1) + 'dari:' +str(Nt) + '('+ percentage(n+1, Nt)+')')
+    print('nilai CFL:' +str(cfl) + 'dengan arah: ' +str(theta))
 ```
 
 **Skenario 1**
 
 ![gif teta 64](https://user-images.githubusercontent.com/106040925/169803814-3aa9063b-bcf9-4031-90fa-9da6bfaf78c7.gif)
 
-Pada skenario 1 (theta = 42) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah timur laut secara kontinu dengan iterasi waktu 0,5 sampai 104. 
+Pada skenario 1 (theta = 64) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah timur laut secara kontinu dengan iterasi waktu 0,5 sampai 106. 
 
 **Skenario 2**
 
 ![gif teta 124](https://user-images.githubusercontent.com/106040925/169803852-16bb335c-c89b-4efe-abc9-eb496db3e117.gif)
 
-Pada skenario 2 (theta =102) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah tenggara secara kontinu dengan iterasi waktu 0,5 sampai 104. 
+Pada skenario 2 (theta =124) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah tenggara secara kontinu dengan iterasi waktu 0,5 sampai 106. 
 
 **Skenario 3**
 
 ![gif teta 199](https://user-images.githubusercontent.com/106040925/169803891-46fa22d6-1727-495f-822b-0a69d7f38865.gif)
 
-Pada skenario 3 (theta = 177) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah barat daya secara kontinu dengan iterasi waktu 0,5 sampai 104.
+Pada skenario 3 (theta = 199) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah barat daya secara kontinu dengan iterasi waktu 0,5 sampai 106.
 
 **Skenario 4**
 
 ![gif teta 379](https://user-images.githubusercontent.com/106040925/169803912-ce9362d3-e53c-46b2-ad1d-c8704c48799b.gif)
 
-Pada skenario 4 (theta = 357) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah timur laut secara kontinu dengan iterasi waktu 0,5 sampai 104. 
+Pada skenario 4 (theta = 379) didapatkan hasil bahwa konsetrasi polutan yang bersumber dari tengah bergerak kearah timur laut secara kontinu dengan iterasi waktu 0,5 sampai 106. 
 
 Arus memberikan peranan dalam proses adveksi-difusi 2D dengan pergerakan polutan yang sesuai dengan arah arus sedangkan koefisien adveksi-difusi memberikan gambaran proses transportasi konsentrasi polutan ke segala arah. Kecepatan pergerakan dan penyebaran bergantung pada kecepatan arus. Persamaan adveksi-difusi dapat diaplikasikan dalam mendeteksi penyebaran polusi di perairan. Hal ini sesuai dengan definisi adveksi yang berarti proses perpindahan panas akibat adanya aliran dan difusi berarti proses perpindahan panas berupa rambatan dari air dengan temperatur tinggi ke air dengan temperatur yang lebih rendah. Persamaan adveksi-difusi dapat diaplikasikan juga untuk mengetahui penyebaran polutan udara akibat cerobong asap dari pabirk-pabrik, di mana semakin tinggi ketinggian sumber polutan maka semakin menurun kadar cemaran polutannya dan semakin tinggi ketinggian sumber polutan maka kadar cemaran polutan akan tetap sama. Dengan adanya penelitian yang menggunakan model seperti itu diharapkan dapat mencegah terjadinya polutan sehingga pencemaran dapat dihindari.
 
