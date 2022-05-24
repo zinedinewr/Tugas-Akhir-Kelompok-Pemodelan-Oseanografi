@@ -4,45 +4,28 @@ Repositori ini dibuat untuk memenuhi tugas akhir mata kuliah Praktikum Pemodelan
 Semoga bermanfaat <3
 
 # **Adveksi-Difusi 1D**
-penjelasan, coding, dan gambar
-
-Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya sedangkan difusi dapat didefinisikan sebagai sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah. Persamaan gelombang linier orde satu termasuk ke dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi fluida dengan arah tertentu. Persamaan tersebut dapat didiskritisasi menggunakan secara eksplisit maupun implisit. Tipe eksplisit memiliki keunggulan berupa stabilitas hitungan dan perhitungan yang lebih mudah dibandingkan tipe implisit tetapi tipe eksplisit memerlukan proses yang lama.
-
-#**Difusi**
-Difusi adalah peristiwa dimana terjadi transfer materi melalui materi lain. Transfer materi ini berlangsung karena atom atau partikel selalu bergerak oleh agitasi thermal. Difusi merupakan proses irreversible (tidak dapat diubah). Pada fase gas dan cair, peristiwa difusi mudah terjadi, sedangkan pada fase padat difusi juga terjadi walaupun memerlukan waktu yang lebih lama. 
-Fenomena difusi massa digambarkan sebagai berikut : 
-
+Adveksi merupakan mekanisme perpindahan massa suatu materi dari suatu titik ke titik lainnya sedangkan difusi dapat didefinisikan sebagai sebuah proses dimana suatu zat bergerak dari konsentrasi tinggi ke rendah. Persamaan gelombang linier orde satu termasuk ke dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi fluida dengan arah tertentu. Persamaan tersebut dapat didiskritisasi menggunakan secara eksplisit maupun implisit. Tipe eksplisit memiliki keunggulan berupa stabilitas hitungan dan perhitungan yang lebih mudah dibandingkan tipe implisit tetapi tipe eksplisit memerlukan proses yang lama. Sementara itu, difusi merupakan peristiwa dimana terjadi transfer materi melalui materi lain. Transfer materi ini berlangsung karena atom atau partikel selalu bergerak oleh agitasi thermal. Difusi merupakan proses irreversible (tidak dapat diubah). Pada fase gas dan cair, peristiwa difusi mudah terjadi, sedangkan pada fase padat difusi juga terjadi walaupun memerlukan waktu yang lebih lama.
 
 ![image](https://user-images.githubusercontent.com/106045814/169815374-47edb95b-3055-46c9-a414-7fdf7fa48c5c.png)
 
+Gambar 1 menggambarkan fenomena proses difusi. Ketika baru terjadi pelepasan massa, kerapatan massa masih berkonsentrasi di sekitar sumber dan belum menyebar. Hal ini terlihat dari daerah hitam yang terkonsentrasi di sekitar sumber dan terang di titik-titik yang jauh dari sumber (Gambar 1a). Pada gambar 1b, daerah hitam di sekitar sumber mulai membesar, menunjukan massa telah mulai menyebar. Penyebaran massa ini terus terjadi dan semakin tampak jelas pada gambar 1c yaitu dengan membesarnya daerah hitam dan juga memudarnya warna hitam di sekitar sumber. Pada gambar 1d, di sekitar sumber tidak hitam lagi yang menunjukan penurunan kerapatan massa yang cukup berarti di titik sumber. Penurunan kerapatan massa di sekitar sumber ini semata-mata karena massa telah menyebar dan secara total tidak terjadi pengurangan ataupun penambahan massa.
 
-Pada gambar (1) di atas merupakan proses difusi. Saat baru terjadi pelepasan massa, kerapatan massa masih berkonsentrasi disekitar sumber dan belum menyebar. Hal ini terlihat dari daerah hitam yang terkonsentrasi di sekitar sumber dan terang di titik-titik yang jauh dari sumber (Gambar 1a). Berikutnya, pada gambar 1b, daerah hitam di sekitar sumber mulai membesar, menunjukan massa telah mulai menyebar. Penyebaran massa ini terus terjadi dan semakin tampak jelas pada gambar 1c yaitu dengan membesarnya daerah hitam dan juga memudarnya warna hitam di sekitar sumber. Pada gambar 1d, di sekitar sumber tidak hitam lagi, yang menunjukan penurunan kerapatan massa yang cukup berarti di titik sumber. Penurunan kerapatan massa di sekitar sumber ini semata-mata karena massa telah menyebar dan secara total tidak terjadi pengurangan ataupunpenambahan massa
-
-Persamaan Adveksi- Difusi 1D
+**Persamaan Adveksi-Difusi 1D**
 1. Difusi 
-
 
 ![image](https://user-images.githubusercontent.com/106045814/169814201-222a9150-dcd1-49b6-9852-10ee3d0e0dff.png)
 
-
-2. Deskritisasi 1D proses Difusi 
-
+2. Diskritisasi Proses Difusi 1D
 
 ![image](https://user-images.githubusercontent.com/106045814/169814299-43b87601-02e5-4fae-b934-70f52fc9461d.png)
 
-
-3. Persamaan Adveksi Difusi 
-
+3. Persamaan Adveksi-Difusi 
 
 ![image](https://user-images.githubusercontent.com/106045814/169814451-0ff1ead3-53cd-4732-a937-8f9a8f79f835.png)
 
-
 dengan kriteria : 
 
-
 ![image](https://user-images.githubusercontent.com/106045814/169814549-2306dd0f-2ae9-44ff-97a2-c5685223c0bb.png)
-
-
 
 # **Adveksi-Difusi 2D**
 Gejala yang terjadi di perairan sangat penting untuk dipelajari terutama yang berhubungan dengan adveksi dan difusi polutan. Fenomena aliran dan transportasi merupakan suatu gejala alam yang penting untuk dipelajari karena mempunyai pengaruh terhadap beberapa studi rekayasa. Fenomena tersebut terjadi dalam berbagai macam situasi fisik, seperti transfer panas, proses pemisahan zat kimia, aliran fluida dalam media berpori, penyebaran kontaminan dalam cairan, dan transportasi partikel-partikel kecil, seperti penyebaran polutan, garam, dan sedimen di perairan dangkal. Model matematika dapat digunakan dalam persoalan-persoalan polusi lingkungan yang terjadi pada perairan dengan disimulasikan atau diturunkan fenomena kejadiannya. 
@@ -77,26 +60,36 @@ Pada skenario 4 (theta = 357) didapatkan hasil bahwa konsetrasi polutan yang ber
 
 Arus memberikan peranan dalam proses adveksi-difusi 2D dengan pergerakan polutan yang sesuai dengan arah arus sedangkan koefisien adveksi-difusi memberikan gambaran proses transportasi konsentrasi polutan ke segala arah. Kecepatan pergerakan dan penyebaran bergantung pada kecepatan arus. Persamaan adveksi-difusi dapat diaplikasikan dalam mendeteksi penyebaran polusi di perairan. Hal ini sesuai dengan definisi adveksi yang berarti proses perpindahan panas akibat adanya aliran dan difusi berarti proses perpindahan panas berupa rambatan dari air dengan temperatur tinggi ke air dengan temperatur yang lebih rendah. Persamaan adveksi-difusi dapat diaplikasikan juga untuk mengetahui penyebaran polutan udara akibat cerobong asap dari pabirk-pabrik, di mana semakin tinggi ketinggian sumber polutan maka semakin menurun kadar cemaran polutannya dan semakin tinggi ketinggian sumber polutan maka kadar cemaran polutan akan tetap sama. Dengan adanya penelitian yang menggunakan model seperti itu diharapkan dapat mencegah terjadinya polutan sehingga pencemaran dapat dihindari.
 
-
-
 # **Hidrodinamika 1D**
-hidrodinamika itu adalah cabang ilmu yang mempelajari pergerakan suatu fluida, faktor apa saja yang mempengaruhi pergerakan tersebut. Pada modul 3 ini akan di buat pemodelan dengan dasar hidrodinamika satu dimensi. Di praktikum kali ini memprogramkan suatu simulasi elevasi muka air laut dan kecepatan arus yang dipengaruhi oleh beberapa parameter. pada model ini akan dipengaruhi oleh beberapa hal yaitu faktor eksternal seperti pasang surut, gelombang, viskositas, gaya coriolis, dan lain lain. faktor faktor tersebut merupakan faktor oseanorafi yang berpengaruh pada model yang akan dijalankan pada program hidrodinamika satu dimensi ini. untuk model hidrodinamika ini dibangun berdasarkan persamaan atau hukum konservasi massa atau kontinuitas dan persamaan momentum : ![persamaan momentum](https://user-images.githubusercontent.com/106046240/169879942-41973951-7f7f-4216-a58a-9a44caedd487.jpg)
+Hidrodinamika merupakan cabang ilmu yang mempelajari pergerakan suatu fluida dan faktor yang memengaruhi pergerakan tersebut. Model hidrodinamika adalah model yang didasarkan pada deskripsi proses-proses yang memengaruhi sirkulasi dan pencampuran massa air dengan hukum pembangun yang terdiri dari hukum kontinuitas dan momentum serta diasumsikan dengan adanya skenario. Pemodelan hidrodinamika 1D dapat digunakan untuk memodelkan suatu simulasi elevasi muka air laut dan kecepatan arus yang dipengaruhi oleh beberapa parameter. Model ini dipengaruhi oleh faktor eksternal, seperti pasang surut, gelombang, viskositas, gaya coriolis, dan lain lain. Faktor-faktor tersebut merupakan faktor oseanografi yang berpengaruh pada model hidrodinamika 1D yang akan dijalankan. Beberapa kelemahan model hidrodinamika adalah terdapat banyak data, rawan *error* ketika terdapat perhitungan aliran kritis, dan simulasi lama.
+
+**Persamaan Momentum**
+
+![persamaan momentum](https://user-images.githubusercontent.com/106046240/169879942-41973951-7f7f-4216-a58a-9a44caedd487.jpg)
+
+**Persamaan Kontinuitas**
+
 ![persamaa kontinuitas](https://user-images.githubusercontent.com/106046240/169880358-a3292cdf-98d8-4964-bb36-c7f76560c3e9.jpg)
 
-persamaan diatas merupakan persamaan yang menjadi dasar dari model ini. Kemudian selanjutnya model hidrodinamika ini akam menggunakan persamaan pembangun. persamaan pembangun ini nantinya akan dikembangkan lagi dan juga ditambah dengan persamaan transport yang berubah terhadap waktu dan arah. persamaan persamaan yang digunakan pada modul ini sudah pernah digunakan pada modul sebelumnya yaitu modul 1 dan modul 2. dalam program modul 3 ini juga diperlukan diskritisasi supaya modelnya bisa berjalan dan menghasilkan hasil yang akurat.
+Pemodelan hidrodinamika 1D juga menggunakan persamaan pembangun yang nantinya akan dikembangkan lagi dan persamaan transport yang berubah terhadap waktu dan arah. Persamaan-persamaan yang digunakan pada pemodelan ini perlu didiskritisasi agar pemodelan bisa berjalan dan menghasilkan hasil yang akurat. Pemodelan hidrodinamika 1D dapat menghasilkan dua jenis grafik dengan perbedaan berdasarkan kedalaman atau elevasi pada masing-masing grafik.
 
-setelah hasil coding di run maka akan menghasilkan beberapa grafik seperti dibawah ini :
+**Grafik 1**
+
 ![Fig0](https://user-images.githubusercontent.com/106046240/169881348-c9697e79-bc0e-470c-b01c-d6fc2319e4f2.png)
+
+**Grafik 2**
+
 ![fig1](https://user-images.githubusercontent.com/106046240/169881376-d06a015e-19b0-495b-8398-42f3ae037cb3.png)
+
+**Grafik 3**
+
 ![Fig2](https://user-images.githubusercontent.com/106046240/169881396-8a74f51a-46a9-4ffa-9302-daf13f4a16bc.png)
+
+**Grafik 4**
+
 ![Fig3](https://user-images.githubusercontent.com/106046240/169881789-b286de83-6424-440a-8aca-bebfd2e4fc2f.png)
 
-Berdasarkan grafik yang dihasilkan terdapat 2 jenis grafik dengan perbedaan berdasarkan kedalaman atau elevasi pada masing-masing grafik. Grafik 1 dan 2 menunjukan pola grafik yang tidak konsisten apabila ditinjau berdasarkan besar elevasi pada grafik tersebut menunjukan kedalaman tersebut berada pada perairan dangkal dengan kondisi batas yang tidak terpenuhi. Grafik 3 dan 4 dimana terlihat pola grafik yang konsisten dengan semakin besar grid elevasi maka nilai kecepatannya akan semakin meningkat. Grafik 3 dan 4 terlihat lebih konsisten yang dapat diartikan bahwa jenis perairan pada grafik 3 dan 4 yang menjadi objek analisis merupakan perairan dalam. Berdasarkan pola pada grafik dan nilai yang didapat antara besar elevasi dengan kecepatan terlihat sinkorn, sehingga untuk grafik 3 dan 4 tidak diperlukan analisis dengan model 2 dimensi atau 3 dimensi, akan tetapi grafik 1 dan 2 dimana lokasinya adalah perairan pesisir diperlukan analisis lanjutan menggunakan pemodelan 2 ataupun 3 dimensi 
-
-Model hidrodinamika adalah model yang didasarkan pada deskripsi proses-proses yang memengaruhi sirkulasi dan pencampuran massa air dengan hukum pembangun yang terdiri dari hukum konservasi massa, kontinuitas, dan momentum serta diasumsikan dengan adanya skenario. Beberapa kelemahan model hidrodinamika, yaitu:
-1. Banyak data,
-2. Rawan *error* ketika terdapat perhitungan aliran kritis, dan
-3. Simulasi lama.
+Grafik 1 dan 2 menunjukkan pola grafik yang tidak konsisten apabila ditinjau dari besar elevasi. Pada grafik tersebut menunjukan kedalaman berada pada perairan dangkal atau pesisir dengan kondisi batas yang tidak terpenuhi. Grafik 3 dan 4 menunjukkan pola grafik yang konsisten dengan grid elevasi yang semakin besar sehingga nilai kecepatannya semakin meningkat. Pada grafik tersebut terlihat lebih konsisten sehingga dapat diartikan bahwa jenis perairan yang menjadi objek analisis merupakan perairan dalam. Berdasarkan pola pada grafik dan nilai yang didapat antara besar elevasi dengan kecepatan terlihat sinkron sehingga untuk grafik 3 dan 4 tidak diperlukan analisis dengan model 2D atau 3D sedangkan grafik 1 dan 2 memerlukan analisis lanjutan menggunakan pemodelan 2D atau 3D. 
 
 # **Hidrodinamika 2D**
 penjelasan, coding, dan gambar
