@@ -262,7 +262,7 @@ for i in range (1, 16):
   ax0.legend()
 
   ax0.set(xlabel='Waktu', ylabel='Kecepatan Arus',
-          title=''' Kirana Adhiningtyas_26050120130077
+          title=''' Valiant Muhammad Wening_26050120130107
           Perubahan Kecepatan Arus dalam Grid Tertentu di Sepanjang Waktu''')
   ax0.grid()
 
@@ -273,7 +273,7 @@ for i in range (1, 16):
   ax1.legend()
 
   ax1.set(xlabel='Waktu', ylabel='Elevasi Muka Air',
-          title=''' Kirana Adhiningtyas_26050120130077
+          title=''' Valiant Muhammad Wening_26050120130107
           Perubahan Elevasi Permukaan Air dalam Grid Tertentu di Sepanjang Waktu''')
   ax1.grid()
 
@@ -284,7 +284,7 @@ for i in range (1, 16):
   ax2.legend()
 
   ax2.set(xlabel='Grid', ylabel='Kecepatan Arus',
-          title=''' Kirana Adhiningtyas_26050120130077
+          title=''' Valiant Muhammad Wening_26050120130107
           Perubahan Kecepatan Arus dalam Waktu Tertentu di Sepanjang Waktu''')
   ax2.grid()
 
@@ -295,7 +295,7 @@ for i in range (1, 16):
   ax3.legend()
 
   ax3.set(xlabel='Grid', ylabel='Elevasi Muka Air',
-          title=''' Kirana Adhiningtyas_26050120130077
+          title=''' Valiant Muhammad Wening_26050120130107
           Perubahan Elevasi Permukaan Air dalam Waktu Tertentu di Sepanjang Waktu''')
   ax3.grid()
 
@@ -324,8 +324,6 @@ Grafik 1 dan 2 menunjukkan pola grafik yang tidak konsisten apabila ditinjau dar
 
 Pemodelan hidrodinamika 2D dapat digunakan untuk meninjau arah yang lain, misalnya pada sumbu x dan y atau pada sumbu x dan z. Persamaan ini dapat digunakan dalam pemodelan gelombang akibat angin, pemodelan sampah plastik di laut, pemodelan *coastal dynamics* dan sedimentasi pantai serta mengukur tingkat konsentrasi kimia berdasarkan kedalaman dan panjangnya. Pada pemodelan hidrodinamika 2D dapat ditemukan anomali yang menyebabkan hasil tidak sepenuhnya sesuai dengan kondisi aslinya.
 
-Langkah pengerjaan modul hidrodinamika 2D yaitu sebagai berikut
-
 **Impor Modul**
 ```
 import matplotlib.pyplot as plt
@@ -334,8 +332,10 @@ from siphon.simplewebservice.ndbc import NDBC
 ################
 df = NDBC.realtime_observations('46015') #stationid
 df.head()
+```
 
-###############
+**Pembuatan Grafik**
+```
 fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(12, 10))
 ax2b = ax2.twinx()
 
@@ -358,50 +358,27 @@ ax3.set_ylabel('Water Temperature[degC]')
 plt.show
 ```
 
-**Grafik yang Diperoleh**
+**Hasil Parameter Stasiun 46015**
 
 ![prak pemos 25-4-22](https://user-images.githubusercontent.com/92511825/169948761-20b242e6-5c16-4812-a98a-1bf6fbce4762.png)
 
-Gambar 1. Hasil Parameter Stasiun 46015
+*Buoy* stasiun 46015 berada di dekat pesisir pantai wilayah Port Orford, Oregon, Amerika Serikat pada koordinat 42°45'9" N 124°50'37" W. Stasiun tersebut memiliki ketinggian *sea level* dengan *watch circle radius* sebesar 798 yards. Data grafik yang diperoleh dari *buoy* berupa grafik tekanan, grafik kecepatan angin, grafik arah angin, dan grafik suhu perairan. Tekanan yang diterima oleh *buoy* terlihat fluktuatif dilambangkan oleh garis hitam pada grafik dengan rentang tekanan dari 1000 - 1030 hPa untuk rentang waktu 45 hari. Kecepatan angin dilambangkan oleh garis berwarna oranye yang berada pada rentang 0 - 20 m/s dengan kecepatan tertinggi mendekati 20 m/s. Pada bulan Maret - April di Port Orford, Oregon, Amerika Serikat termasuk masa yang lebih berangin dalam setahun yang berlangsung selama 4,9 bulan (6 November - 2 April) dengan kecepatan angin rata-rata > 14,5 km/h. Pada bulan Maret - April di Port Orford, Oregon, Amerika Serikat termasuk masa di mana angin paling sering bertiup dari arah selatan. Angin bertiup dari arah selatan selama 5,2 bulan (25 Oktober - 2 April). Akan tetapi, tidak diperoleh data grafik mengenai arah angin yang diperoleh dari *buoy*.
 
-**Analisis**
-
-Pada peta yang ditampilkan oleh situs buoy, stasiun 46015 berada di dekat pesisir pantai 
-wilayah Port Orford, Oregon, Amerika Serikat dengan koordinat 42°45'9" N 124°50'37" W. 
-Stasiun tersebut memiliki ketinggian sea level dengan watch circle radius sebesar 798 yards.
-Data grafik yang diperoleh dari buoy berupa grafik tekanan, grafik kecepatan angin, grafik arah 
-angin dan grafik suhu perairan. Tekanan yang diterima oleh buoy terlihat fluktuatif yang
-dilambangkan oleh garis hitam pada grafik, dengan rentang tekanan dari 1000 hPa sampai 1030 
-hPa pada rentang waktu 45 hari. Kecepatan angin dilambangkan oleh garis berwarna oranye 
-yang berada pada rentang 0 m/s sampai 20 m/s dengan kecepatan tertinggi mendekati 20 m/s. 
-Pada bulan Maret-April di Port Orford, Oregon, Amerika Serikat termasuk masa yang lebih 
-berangin dalam setahun yang berlangsung selama 4,9 bulan (6 November sampai 2 April). 
-Kecepatan angin rata-rata lebih dari 14,5 kilometer per jam. Pada bulan Maret-April di Port 
-Orford, Oregon, Amerika Serikat termasuk masa dimana angin paling sering bertiup dari arah selatan. Angin bertiup dari arah selatan selama 5,2 bulan (25 Oktober hingga 2 April). Akan
-tetapi, tidak diperoleh data grafik mengenai arah angin yang diperoleh dari buoy.
+**Perubahan Kecepatan Angin Port Orford Tahun 2022**
 
 ![Kecepatan Angin pada bulan 2022 in Port Orford](https://user-images.githubusercontent.com/92511825/169950571-f2f2e38b-668c-42ef-87b2-0b1883f8034f.png)
 
-Gambar 2. Perubahan Kecepatan Angin Port Orford Tahun 2022
 (Sumber: Cedar Lake Ventures, 2022)
 
-Suhu air digambarkan oleh garis coklat pada grafik dengan rentang suhu antara 9.5°C sampai 
-11.5°C. Suhu air meningkat saat memasuki bulan April karena bulan April di Oregon, Amerika 
-Serikat termasuk dalam musim peralihan dari musim dingin. Musim dingin berlangsung selama 
-4,3 bulan dari 22 November sampai 2 April dengan suhu rata-rata dibawah 13°C (Cedar Lake 
-Ventures, 2022).
+Suhu air digambarkan oleh garis coklat pada grafik dengan rentang suhu antara 9,5 - 11,°C. Suhu air meningkat saat memasuki bulan April karena bulan April di Oregon, Amerika Serikat termasuk dalam musim peralihan dari musim dingin. Musim dingin berlangsung selama 4,3 bulan dari 22 November - 2 April dengan suhu rata-rata di bawah 13°C (Cedar Lake Ventures, 2022).
+
+**Perubahan Suhu Perairan Port Orford Tahun 2022**
 
 ![Riwayat suhu 2022 di Port Orford](https://user-images.githubusercontent.com/92511825/169950730-f5925459-c014-45f8-887e-efe3e8b94c3d.png)
 
-Gambar 3. Perubahan Suhu Perairan Port Orford Tahun 2022
 (Sumber: Cedar Lake Ventures, 2022)
 
-Dari grafik yang dihasilkan, walau fluktuatif tetapi nampak tidak terdapat anomali di daerah 
-Port Orford, Oregon, Amerika Serikat. Adanya anomali dapat disebabkan oleh siklon atau 
-badai yang terjadi pada daerah tersebut. Pada grafik tidak nampak anomaly maka dapat 
-disimpulkan bahwa tidak terjadi siklon ataupun badai dalam rentang waktu 45 hari di Port 
-Orford, Oregon, Amerika Serikat.
-
+Grafik yang dihasilkan tergolong fluktuatif tetapi tidak terlihat adanya anomali di daerah Port Orford, Oregon, Amerika Serikat. Adanya anomali dapat disebabkan oleh siklon atau badai yang terjadi pada daerah tersebut. Pada grafik tidak nampak anomali maka dapat disimpulkan bahwa di daerah Port Orford, Oregon, Amerika Serikat tidak terjadi siklon ataupun badai dalam rentang waktu 45 hari.
 
 # Pengunduhan *Script* Pemodelan Oseanografi
 1. Klik *releases* pada repositori ini.
@@ -417,9 +394,8 @@ Orford, Oregon, Amerika Serikat.
 ![ta3](https://user-images.githubusercontent.com/105653499/169699931-7fd825c4-353f-4f59-9772-c32e135f2ac3.png)
 
 # 👨‍💻 **Kelompok 9 Pemodelan Oseanografi** 👩‍💻
-1.
+1. Valiant Muhammad Wening/26050120130107/Oseanografi A
 2. Gabriela Vany Rosanta Sinaga/ 26050120120024/ Oseanografi A
 3. Kirana Adhiningtyas/26050120130077/Oseanografi A
 4. Zinedine Wira Mulyawan/26050120130046/Oseanografi A
 5. Marto Naldo Sitanggang/26050120140038/Oseanografi B
-6. Valiant Muhammad Wening/26050120130107/Oseanografi A
