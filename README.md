@@ -43,6 +43,7 @@ import sys
 def percentage(part, whole):
         percentage = 100 * float(part)/float(whole)
         return str(round(percentage,2)) + "%"
+#%%
 ```
 
 **Input Parameter Awal**
