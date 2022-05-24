@@ -325,6 +325,45 @@ penjelasan, coding, dan gambar
 
 Pemodelan hidrodinamika 2D dapat digunakan untuk meninjau arah yang lain, misalnya pada sumbu x dan y atau pada sumbu x dan z. Persamaan ini dapat digunakan dalam pemodelan gelombang akibat angin, pemodelan sampah plastik di laut, pemodelan *coastal dynamics* dan sedimentasi pantai serta mengukur tingkat konsentrasi kimia berdasarkan kedalaman dan panjangnya. Pada pemodelan hidrodinamika 2D dapat ditemukan anomali yang menyebabkan hasil tidak sepenuhnya sesuai dengan kondisi aslinya.
 
+Langkah pengerjaan modul hidrodinamika 2D yaitu sebagai berikut
+
+**Impor Modul**
+
+import matplotlib.pyplot as plt
+from siphon.simplewebservice.ndbc import NDBC
+
+################
+df = NDBC.realtime_observations('46015') #stationid
+df.head()
+
+###############
+fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(12, 10))
+ax2b = ax2.twinx()
+
+#pressure
+ax1.plot(df['pressure'], color='black')
+ax1.set_ylabel('pressure[hPa]')
+fig.suptitle('Zinedine Wira Mulyawan_26050120130046_Ose A', fontsize=18)
+
+#wind speed, gust, direction
+ax2.plot(df['time'], df['wind_speed'], color='tab:orange')
+ax2.plot(df['time'], df['wind_gust'], color='tab:olive', linestyle='--')
+ax2b.plot(df['time'], df['wind_direction'], color='tab:blue', linestyle='-')
+ax2.set_ylabel('Wind Speed [m/s]')
+ax2b.set_ylabel('Wind Direction')
+
+#water temperature
+ax3.plot(df['time'], df['water_temperature'], color='tab:brown')
+ax3.set_ylabel('Water Temperature[degC]')
+
+plt.show
+
+**Grafik yang Diperoleh**
+
+![prak pemos 25-4-22](https://user-images.githubusercontent.com/92511825/169948761-20b242e6-5c16-4812-a98a-1bf6fbce4762.png)
+
+**Analisis**
+
 # Pengunduhan *Script* Pemodelan Oseanografi
 1. Klik *releases* pada repositori ini.
 
